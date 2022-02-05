@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;400;500;600;700;900&family=Lato:wght@100;300;400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #c8c85ec;
+}
+
+body {
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif,  'Helvetica' sans-serif;
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    min-width: 100%;
+    text-align: center;
+}
+
+.main {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #9dc5c3;
+    background-image: linear-gradient(150deg, #325cd8 10%, #857f7f 64%);
+}
+
+.title {
+    display: none;
+}
+
+.img-div{
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    text-align: center;
+}
+
+.tribute-caption {
+    display: block;
+    width: 100%;
+    margin: -1%  0;
+    margin-bottom: 10px;
+    padding: 1% 0 0 0;
+    background-image: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);
+}
+
+.time-line h2{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: 4% 2% 0;
+}
+
+.time-line li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+    text-align: center;
+}
+
+.time-line p {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.event-break {
+    border-left: 4px solid #deebdd;
+    height: 25px;
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
+
+  .tribute-song-title{
+      text-align: center;
+      margin-top: 1%;
+  }
+
+  .tribute-lyrics {
+      display: inline-flex;
+      flex-direction: column;
+      line-height: 1.4rem;
+
+      text-align: center;
+      max-width: 90vw;
+      margin: 0 auto;
+      padding-bottom: 2%;
+  }
+
+  .tribute-footer {
+  background-color: rgba(7, 43, 150, 0.3);
+  background-image: linear-gradient(170deg, #36096d 0%, #37d5d6 74%);
+
+  padding: 1% 0;
+  }
+
+  /*media queries*/
+
+  @media screen and (max-width: 768px) and (min-width: 450px){
+    .img-div {
+        width: 99%;
+        height: 500px;
+    }
+
+    .tribute-photo {
+        width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 820px){
+      .mobile-title{
+          display: none;
+      }
+
+      .title {
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 10px;
+      }
+
+      .img-div{
+        display: block;
+        width: 100%;
+        max-height: 825px;
+        text-align: center;
+    }
+
+    .tribute-footer {
+        width: 100vw;
+        text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 980px) {
+
+      .img-div {
+        max-height: 1200px;
+      }
+
+    article {
+       justify-content: center;
+       max-width: 800px;
+    }
+
+    .time-line section {
+        width: 45%;
+        float: left;
+    }
+
+    .tribute-lyrics {
+        width: 45%;
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+     .tribute-main-content {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         overflow: hidden;
+     }
+
+     .time-line {
+         width: 45%;
+     }
+
+     .tribute-lyrics {
+         width: 30%;
+     }
+  }
+
+  @media screen and (min-width: 1200px)  {
+      .img-div {
+       height: 100vh;
+      }
+
+      .tribute-main-content {
+          margin-top: 1%;
+      }
+  }
